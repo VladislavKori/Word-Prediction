@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "Google Sans", sans-serif;
+  --bg-color: white;
+  --text-color: black;
+
+  --input-bg-color: #f0f0f0
+}
+
+body {
+  background: var(--bg-color);
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-size: 4.00rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.subtitle {
+  font-family: var(--font-family);
+  font-size: 1.50rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input {
+  padding: 1.50rem;
+  border-radius: 0.50rem;
+  background: var(--input-bg-color);
+  width: 100%;
+  border: none;
+  font-family: var(--font-family);
+  font-size: 1.50rem;
+  outline: none;
+  resize: none;
+  min-height: 200px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.info h2 {
+  color: #000;
+  font-family: var(--font-family);
+  font-size: 1.50rem;
+  font-weight: 700;
+}
+
+.info p {
+  color: rgba(0, 0, 0, 0.80);
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.info a {
+  color: blue;
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.info ul {
+  margin-left: 1.25rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.social-link {
+  display: flex;
+  padding: 0.88rem 1.50rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.63rem;
+  border-radius: 0.50rem;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.social-link:hover {
+  transform: scale(1.05);
+}
+
+.social-link span {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.github {
+  background: #000;
+}
+
+.github span {
+  color: #FFF;
+}
+
+.telegram {
+  background: rgb(228, 228, 228);
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#prediction {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-family: var(--font-family);
+  font-size: 1.50rem;
+  pointer-events: none;
+  user-select: none;
+  white-space: pre;
+  padding: 1.50rem;
+  height: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere; 
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+}
